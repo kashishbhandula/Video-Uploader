@@ -37,13 +37,6 @@ function UploadPage({ sampleImages, Toolname }) {
  const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
 	handleSubmit(event, selectedFile);
-    const currentPath = router.pathname;
-	const imageUrl = URL.createObjectURL(selectedFile);
-    const newImageUrl = JSON.stringify(imageUrl)
-    router.push({
-      pathname: `${currentPath}/${selectedFile.name}`,
-      query: { fileName: newImageUrl },
-    });
 };
 
   const handleSubmit = async (event, selectedFile) => {
