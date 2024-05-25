@@ -15,7 +15,6 @@ export default function VideoPreview() {
       const newFileName = JSON.parse(fileName);
       setVideoUrl(newFileName);
     } catch (error) {
-      console.error("Error parsing fileName:", error);
       router.push("/upload/video");
     }
   }, [fileName]);
