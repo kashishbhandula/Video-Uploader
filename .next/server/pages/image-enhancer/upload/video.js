@@ -1,0 +1,76 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/image-enhancer/upload/video";
+exports.ids = ["pages/image-enhancer/upload/video"];
+exports.modules = {
+
+/***/ "./components/vide-upload/uploadVideo.js":
+/*!***********************************************!*\
+  !*** ./components/vide-upload/uploadVideo.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ UploadVideo)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction UploadVideo() {\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_1__.useRouter)();\n    const handleFileChange = (event)=>{\n        const selectedFile = event.target.files[0];\n        if (selectedFile) {\n            const videoUrl = URL.createObjectURL(selectedFile);\n            const currentPath = router.pathname;\n            router.push({\n                pathname: `${currentPath}/${selectedFile.name}`,\n                query: {\n                    fileName: JSON.stringify(videoUrl)\n                }\n            });\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"md:pr-5 xl:pr-5 md:pl-0 xl:pl-0 pr-2 pl-2\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"h-[85vh] relative mt-20 bg-spyne_blue-20 border-spyne_blue-200 p-4 border-dashed border rounded-xl text-center lg:pt-10 pt-10 md:p-3 flex flex-col items-center justify-center\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                    className: \"h-[10vh] w-full opacity-0\",\n                    type: \"file\",\n                    accept: \"video/*\",\n                    onChange: handleFileChange\n                }, void 0, false, {\n                    fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                    lineNumber: 20,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"uploadBoxContent pb-3\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                            className: \"m-auto mb-6\",\n                            src: \"https://prod-spyne-website.s3.amazonaws.com/ba4d9e53-62ef-46bb-a529-4f2a2dc67404\",\n                            alt: \"Upload\"\n                        }, void 0, false, {\n                            fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                            lineNumber: 27,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                            htmlFor: \"videoFile\",\n                            className: \"btn\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                className: \"blue-btn m-auto w-52 cursor-pointer\",\n                                children: \"Upload\"\n                            }, void 0, false, {\n                                fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                                lineNumber: 33,\n                                columnNumber: 13\n                            }, this)\n                        }, void 0, false, {\n                            fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                            lineNumber: 32,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                            className: \"opacity-0 h-0\",\n                            type: \"file\",\n                            id: \"videoFile\",\n                            accept: \"video/*\",\n                            onChange: handleFileChange\n                        }, void 0, false, {\n                            fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                            lineNumber: 35,\n                            columnNumber: 11\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            className: \"mt-[-12px]\",\n                            children: \"Drop your video here\"\n                        }, void 0, false, {\n                            fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                            lineNumber: 42,\n                            columnNumber: 11\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n                    lineNumber: 26,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n            lineNumber: 19,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/components/vide-upload/uploadVideo.js\",\n        lineNumber: 18,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL3ZpZGUtdXBsb2FkL3VwbG9hZFZpZGVvLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFBd0M7QUFFekIsU0FBU0MsY0FBYztJQUNwQyxNQUFNQyxTQUFTRixzREFBU0E7SUFDeEIsTUFBTUcsbUJBQW1CLENBQUNDLFFBQVU7UUFDbEMsTUFBTUMsZUFBZUQsTUFBTUUsTUFBTSxDQUFDQyxLQUFLLENBQUMsRUFBRTtRQUMxQyxJQUFJRixjQUFjO1lBQ2hCLE1BQU1HLFdBQVdDLElBQUlDLGVBQWUsQ0FBQ0w7WUFDckMsTUFBTU0sY0FBY1QsT0FBT1UsUUFBUTtZQUNuQ1YsT0FBT1csSUFBSSxDQUFDO2dCQUNWRCxVQUFVLENBQUMsRUFBRUQsWUFBWSxDQUFDLEVBQUVOLGFBQWFTLElBQUksQ0FBQyxDQUFDO2dCQUMvQ0MsT0FBTztvQkFBRUMsVUFBVUMsS0FBS0MsU0FBUyxDQUFDVjtnQkFBVTtZQUM5QztRQUNGLENBQUM7SUFDSDtJQUVBLHFCQUNFLDhEQUFDVztRQUFJQyxXQUFVO2tCQUNiLDRFQUFDRDtZQUFJQyxXQUFVOzs4QkFDYiw4REFBQ0M7b0JBQ0NELFdBQVU7b0JBQ1ZFLE1BQUs7b0JBQ0xDLFFBQU87b0JBQ1BDLFVBQVVyQjs7Ozs7OzhCQUVaLDhEQUFDZ0I7b0JBQUlDLFdBQVU7O3NDQUNiLDhEQUFDSzs0QkFDQ0wsV0FBVTs0QkFDVk0sS0FBSTs0QkFDSkMsS0FBSTs7Ozs7O3NDQUVOLDhEQUFDQzs0QkFBTUMsU0FBUTs0QkFBWVQsV0FBVTtzQ0FDbkMsNEVBQUNVO2dDQUFFVixXQUFVOzBDQUFzQzs7Ozs7Ozs7Ozs7c0NBRXJELDhEQUFDQzs0QkFDQ0QsV0FBVTs0QkFDVkUsTUFBSzs0QkFDTFMsSUFBRzs0QkFDSFIsUUFBTzs0QkFDUEMsVUFBVXJCOzs7Ozs7c0NBRVosOERBQUMyQjs0QkFBRVYsV0FBVTtzQ0FBYTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLcEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2FpLXRvb2xzLy4vY29tcG9uZW50cy92aWRlLXVwbG9hZC91cGxvYWRWaWRlby5qcz8zMzZhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L3JvdXRlclwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBVcGxvYWRWaWRlbygpIHtcbiAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7XG4gIGNvbnN0IGhhbmRsZUZpbGVDaGFuZ2UgPSAoZXZlbnQpID0+IHtcbiAgICBjb25zdCBzZWxlY3RlZEZpbGUgPSBldmVudC50YXJnZXQuZmlsZXNbMF07XG4gICAgaWYgKHNlbGVjdGVkRmlsZSkge1xuICAgICAgY29uc3QgdmlkZW9VcmwgPSBVUkwuY3JlYXRlT2JqZWN0VVJMKHNlbGVjdGVkRmlsZSk7XG4gICAgICBjb25zdCBjdXJyZW50UGF0aCA9IHJvdXRlci5wYXRobmFtZTtcbiAgICAgIHJvdXRlci5wdXNoKHtcbiAgICAgICAgcGF0aG5hbWU6IGAke2N1cnJlbnRQYXRofS8ke3NlbGVjdGVkRmlsZS5uYW1lfWAsXG4gICAgICAgIHF1ZXJ5OiB7IGZpbGVOYW1lOiBKU09OLnN0cmluZ2lmeSh2aWRlb1VybCkgfSxcbiAgICAgIH0pO1xuICAgIH1cbiAgfTtcblxuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwibWQ6cHItNSB4bDpwci01IG1kOnBsLTAgeGw6cGwtMCBwci0yIHBsLTJcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaC1bODV2aF0gcmVsYXRpdmUgbXQtMjAgYmctc3B5bmVfYmx1ZS0yMCBib3JkZXItc3B5bmVfYmx1ZS0yMDAgcC00IGJvcmRlci1kYXNoZWQgYm9yZGVyIHJvdW5kZWQteGwgdGV4dC1jZW50ZXIgbGc6cHQtMTAgcHQtMTAgbWQ6cC0zIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyXCI+XG4gICAgICAgIDxpbnB1dFxuICAgICAgICAgIGNsYXNzTmFtZT1cImgtWzEwdmhdIHctZnVsbCBvcGFjaXR5LTBcIlxuICAgICAgICAgIHR5cGU9XCJmaWxlXCJcbiAgICAgICAgICBhY2NlcHQ9XCJ2aWRlby8qXCJcbiAgICAgICAgICBvbkNoYW5nZT17aGFuZGxlRmlsZUNoYW5nZX1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ1cGxvYWRCb3hDb250ZW50IHBiLTNcIj5cbiAgICAgICAgICA8aW1nXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJtLWF1dG8gbWItNlwiXG4gICAgICAgICAgICBzcmM9XCJodHRwczovL3Byb2Qtc3B5bmUtd2Vic2l0ZS5zMy5hbWF6b25hd3MuY29tL2JhNGQ5ZTUzLTYyZWYtNDZiYi1hNTI5LTRmMmEyZGM2NzQwNFwiXG4gICAgICAgICAgICBhbHQ9XCJVcGxvYWRcIlxuICAgICAgICAgIC8+XG4gICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJ2aWRlb0ZpbGVcIiBjbGFzc05hbWU9XCJidG5cIj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImJsdWUtYnRuIG0tYXV0byB3LTUyIGN1cnNvci1wb2ludGVyXCI+VXBsb2FkPC9wPlxuICAgICAgICAgIDwvbGFiZWw+XG4gICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJvcGFjaXR5LTAgaC0wXCJcbiAgICAgICAgICAgIHR5cGU9XCJmaWxlXCJcbiAgICAgICAgICAgIGlkPVwidmlkZW9GaWxlXCJcbiAgICAgICAgICAgIGFjY2VwdD1cInZpZGVvLypcIlxuICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUZpbGVDaGFuZ2V9XG4gICAgICAgICAgLz5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC1bLTEycHhdXCI+RHJvcCB5b3VyIHZpZGVvIGhlcmU8L3A+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsidXNlUm91dGVyIiwiVXBsb2FkVmlkZW8iLCJyb3V0ZXIiLCJoYW5kbGVGaWxlQ2hhbmdlIiwiZXZlbnQiLCJzZWxlY3RlZEZpbGUiLCJ0YXJnZXQiLCJmaWxlcyIsInZpZGVvVXJsIiwiVVJMIiwiY3JlYXRlT2JqZWN0VVJMIiwiY3VycmVudFBhdGgiLCJwYXRobmFtZSIsInB1c2giLCJuYW1lIiwicXVlcnkiLCJmaWxlTmFtZSIsIkpTT04iLCJzdHJpbmdpZnkiLCJkaXYiLCJjbGFzc05hbWUiLCJpbnB1dCIsInR5cGUiLCJhY2NlcHQiLCJvbkNoYW5nZSIsImltZyIsInNyYyIsImFsdCIsImxhYmVsIiwiaHRtbEZvciIsInAiLCJpZCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/vide-upload/uploadVideo.js\n");
+
+/***/ }),
+
+/***/ "./pages/image-enhancer/upload/video/index.js":
+/*!****************************************************!*\
+  !*** ./pages/image-enhancer/upload/video/index.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ index)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_vide_upload_uploadVideo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/vide-upload/uploadVideo */ \"./components/vide-upload/uploadVideo.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nfunction index() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_vide_upload_uploadVideo__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {}, void 0, false, {\n        fileName: \"/Users/Kashish_work/Desktop/SDE-I-Frontend-Assignment/pages/image-enhancer/upload/video/index.js\",\n        lineNumber: 5,\n        columnNumber: 10\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbWFnZS1lbmhhbmNlci91cGxvYWQvdmlkZW8vaW5kZXguanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7QUFBK0Q7QUFDckM7QUFFWCxTQUFTRSxRQUFRO0lBQzlCLHFCQUFPLDhEQUFDRiwyRUFBV0E7Ozs7O0FBQ3JCLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9haS10b29scy8uL3BhZ2VzL2ltYWdlLWVuaGFuY2VyL3VwbG9hZC92aWRlby9pbmRleC5qcz80MjUzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBVcGxvYWRWaWRlbyBmcm9tIFwiQC9jb21wb25lbnRzL3ZpZGUtdXBsb2FkL3VwbG9hZFZpZGVvXCI7XG5pbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGluZGV4KCkge1xuICByZXR1cm4gPFVwbG9hZFZpZGVvLz47XG59XG5cbiJdLCJuYW1lcyI6WyJVcGxvYWRWaWRlbyIsIlJlYWN0IiwiaW5kZXgiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/image-enhancer/upload/video/index.js\n");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/image-enhancer/upload/video/index.js"));
+module.exports = __webpack_exports__;
+
+})();
